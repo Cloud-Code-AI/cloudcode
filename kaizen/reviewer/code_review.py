@@ -101,6 +101,7 @@ class CodeReviewer:
                         PULL_REQUEST_DESC=pull_request_desc,
                         FILE_PATCH=patch_details,
                     )
+
                     if not self.provider.is_inside_token_limit(
                         PROMPT=prompt, percentage=85
                     ):
